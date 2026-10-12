@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BlueDepths - learn about marine biodiversity, ocean ecosystems, endangered marine species and how to help protect them.">
+  <title>BlueDepths | Ocean Life &amp; Marine Conservation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="logo" href="#home">
+      <span class="logo-icon">🌊</span> BlueDepths
+    </a>
+    <button id="menuBtn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+      <span class="bar-line"></span>
+      <span class="bar-line"></span>
+    </button>
+    <nav id="nav" class="nav">
+      <a href="#home">Home</a>
+      <a href="#ecosystems">Ecosystems</a>
+      <a href="#species">Endangered Species</a>
+      <a href="#conservation">Conservation</a>
+      <a href="#pledge" class="nav-cta">Take the Pledge</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="wrap hero-content">
+      <span class="hero-badge">Global Ocean Initiative</span>
+      <h1>The ocean covers 71% of Earth. Under 10% of it is protected.</h1>
+      <p class="lead">Scroll down and watch the depth gauge. The deeper you go, the more there is to protect: reefs, mangroves, whales, turtles and sharks that all depend on a healthy sea.</p>
+      <div class="actions">
+        <a class="btn primary" href="#species">Meet the species</a>
+        <a class="btn ghost" href="#pledge">Take the pledge</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="ecosystems" class="section-zone">
+    <div class="wrap">
+      <h2>Ocean Ecosystems</h2>
+      <p class="intro">Each habitat shelters different life. Lose one and the others feel it.</p>
+      <div class="grid three">
+        <article class="zone eco-card">
+          <div class="eco-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Coral reef underwater" loading="lazy">
+          </div>
+          <div class="eco-body">
+            <h3>Coral reefs</h3>
+            <p class="where">Warm, shallow, sunlit water</p>
+            <p>Reefs cover a tiny fraction of the seafloor but support roughly a quarter of all marine species. Rising sea temperatures cause bleaching that can kill whole reefs.</p>
+          </div>
+        </article>
+        <article class="zone eco-card">
+          <div class="eco-img-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kywwONPmad4-ZGAy0npxVo9qp-TiE91pUu0K5upreg&s=10" alt="Mangrove roots in water" loading="lazy">
+          </div>
+          <div class="eco-body">
+            <h3>Mangroves &amp; seagrass</h3>
+            <p class="where">Coastlines and shallow bays</p>
+            <p>These nurseries shelter young fish, store large amounts of carbon and soften storm waves before they reach villages and cities.</p>
+          </div>
+        </article>
+        <article class="zone eco-card">
+          <div class="eco-img-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXDODfk1OzaA3oa5jVYmhueJWqAG5GjJjGt6boLnODQQ&s=10" alt="Deep sea bioluminescent environment" loading="lazy">
+          </div>
+          <div class="eco-body">
+            <h3>The deep sea</h3>
+            <p class="where">Below 200 metres</p>
+            <p>The largest habitat on Earth is still mostly unexplored. Deep-sea mining and bottom trawling threaten species we have not yet described.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="species" class="section-zone">
+    <div class="wrap">
+      <h2>Endangered Marine Species</h2>
+      <p class="intro">Conservation status follows the IUCN Red List. Filter by how close each species is to extinction.</p>
+
+      <div class="filters" role="group" aria-label="Filter species by status">
+        <button class="active" data-filter="all">All Species</button>
+        <button data-filter="critical">Critically Endangered</button>
+        <button data-filter="endangered">Endangered</button>
+        <button data-filter="vulnerable">Vulnerable</button>
+      </div>
+
+      <div class="grid three" id="speciesGrid">
+        <article class="card" data-status="critical">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=600&q=80" alt="Hawksbill turtle" loading="lazy">
+            <span class="badge critical">Critically endangered</span>
+          </div>
+          <div class="card-content">
+            <h3>Hawksbill turtle</h3>
+            <p>Lives on coral reefs and eats sponges. Hunted for its shell and losing nesting beaches to development.</p>
+          </div>
+        </article>
+        <article class="card" data-status="critical">
+          <div class="card-img-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ48YS4BerhPfSjHlVo1r7hp8HCAzM6aWKgyVCQ-Kvxw&s=10" alt="Great hammerhead shark" loading="lazy">
+            <span class="badge critical">Critically endangered</span>
+          </div>
+          <div class="card-content">
+            <h3>Great hammerhead</h3>
+            <p>Caught for its fins and as bycatch. Slow to mature, so populations recover very slowly.</p>
+          </div>
+        </article>
+        <article class="card" data-status="endangered">
+          <div class="card-img-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEDu2jDK6y5_JGZzf63Hezhc0EjfYqvv4Nwzh4noUeJg&s=10" alt="Blue whale swimming" loading="lazy">
+            <span class="badge endangered">Endangered</span>
+          </div>
+          <div class="card-content">
+            <h3>Blue whale</h3>
+            <p>The largest animal ever to live. Ship strikes, noise and entanglement in fishing gear are the main threats.</p>
+          </div>
+        </article>
+        <article class="card" data-status="endangered">
+          <div class="card-img-wrap">
+            <img src="https://scubadiverlife.com/wp-content/uploads/2014/05/Dollarphotoclub_28639157.jpg" alt="Whale shark" loading="lazy">
+            <span class="badge endangered">Endangered</span>
+          </div>
+          <div class="card-content">
+            <h3>Whale shark</h3>
+            <p>A gentle filter feeder that can grow past 12 metres. Threatened by fishing and boat collisions.</p>
+          </div>
+        </article>
+        <article class="card" data-status="endangered">
+          <div class="card-img-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1kGylP3trHCPPD5R7MRd2Hw35OPeQ7_KXzI34dU9Nog&s=10" alt="Giant oceanic manta ray" loading="lazy">
+            <span class="badge endangered">Endangered</span>
+          </div>
+          <div class="card-content">
+            <h3>Giant oceanic manta ray</h3>
+            <p>Targeted for its gill plates. Gives birth to a single pup at a time, so losses are hard to replace.</p>
+          </div>
+        </article>
+        <article class="card" data-status="vulnerable">
+          <div class="card-img-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvMCEF7-Y7ROLfs49zacVOhcZaMdJvOdmyBphw4CPx7_dv2ENMV_P4ZdM&s=10" alt="Dugong" loading="lazy">
+            <span class="badge vulnerable">Vulnerable</span>
+          </div>
+          <div class="card-content">
+            <h3>Dugong</h3>
+            <p>Grazes on seagrass meadows. Loses food and habitat as coastal seagrass disappears.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="conservation" class="dark">
+    <div class="wrap">
+      <h2>How We Protect the Ocean</h2>
+      <p class="intro">Big problems require practical, scalable answers.</p>
+      <div class="grid three">
+        <article class="panel">
+          <div class="panel-icon">♻️</div>
+          <h3>Cut plastic at the source</h3>
+          <p>Millions of tonnes of plastic enter the sea every year. Refuse single-use items, join a beach clean-up and support bans on plastic bags.</p>
+        </article>
+        <article class="panel">
+          <div class="panel-icon">🛡️</div>
+          <h3>Create marine protected areas</h3>
+          <p>Protected zones let fish stocks and reefs recover, and fish often spill over into nearby fishing grounds.</p>
+        </article>
+        <article class="panel">
+          <div class="panel-icon">🐟</div>
+          <h3>Choose sustainable seafood</h3>
+          <p>Ask where your fish comes from and pick species caught with low-impact methods. Avoid shark fin and overfished species.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pledge" class="deepest">
+    <div class="wrap narrow">
+      <div class="pledge-card-container">
+        <h2>Take the Ocean Pledge</h2>
+        <p class="intro">Tell us how you want to help. Your pledge will appear below once you submit.</p>
+
+        <form id="pledgeForm" novalidate>
+          <label>Full name
+            <input type="text" id="name" name="Name" placeholder="e.g., Jane Doe" required minlength="2" autocomplete="name">
+          </label>
+          <label>Email
+            <input type="email" id="email" name="Email" placeholder="jane@example.com" required autocomplete="email">
+          </label>
+          <label>City
+            <input type="text" id="city" name="City" placeholder="Your City" required autocomplete="address-level2">
+          </label>
+          <label>I want to help with
+            <select id="interest" name="Interest" required>
+              <option value="">Choose one area</option>
+              <option>Beach clean-ups</option>
+              <option>Protecting coral reefs</option>
+              <option>Sustainable seafood</option>
+              <option>Plastic-free living</option>
+            </select>
+          </label>
+          <label>Your message (optional)
+            <textarea id="message" name="Message" rows="3" placeholder="Share why you care about the ocean..."></textarea>
+          </label>
+          <p id="formError" class="error" role="alert" hidden></p>
+          <button type="submit" class="btn primary full-width">Submit pledge</button>
+        </form>
+
+        <div id="result" class="result" tabindex="-1" hidden></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-content">
+    <p>BlueDepths &copy; <span id="year"></span>. Built for marine biodiversity and ocean preservation worldwide.</p>
+    <div class="footer-links">
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<div class="gauge" aria-hidden="true">
+  <span class="gauge-dot"></span> Depth: <strong id="depth">0</strong> m
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
