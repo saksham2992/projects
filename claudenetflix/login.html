@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Netflix Clone - Sign In</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="bg" id="bg" aria-hidden="true"></div>
+
+<header class="top">
+  <a href="#" class="logo" data-view="home"><img src="Logo.svg" alt="Netflix"></a>
+</header>
+
+<main class="wrap">
+  <form class="card" id="form" novalidate>
+    <h1 id="title">Sign In</h1>
+
+    <div class="alert" id="alert" role="alert" hidden></div>
+
+    <div class="field" id="emailField">
+      <input id="email" type="text" placeholder=" " autocomplete="username">
+      <label for="email">Email or mobile number</label>
+      <p class="err" id="emailErr"></p>
+    </div>
+
+    <div class="field" id="passField">
+      <input id="pass" type="password" placeholder=" " autocomplete="current-password">
+      <label for="pass">Password</label>
+      <button type="button" class="show" id="show">SHOW</button>
+      <p class="err" id="passErr"></p>
+    </div>
+
+    <button class="signin" id="submit" type="submit">Sign In</button>
+
+    <div class="or">OR</div>
+    <button type="button" class="code" id="code">Use a Sign-In Code</button>
+    <a class="forgot" href="#" id="forgot">Forgot password?</a>
+
+    <label class="remember">
+      <input type="checkbox" id="remember" checked>
+      <span class="box"></span>Remember me
+    </label>
+
+    <p class="switch"><span id="switchText">New to Netflix?</span> <a href="#" id="switch">Sign up now.</a></p>
+    <p class="captcha">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>
+  </form>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <a href="#" class="q">Questions? Contact us.</a>
+    <ul>
+      <li><a href="#">FAQ</a></li><li><a href="#">Help Centre</a></li>
+      <li><a href="#">Terms of Use</a></li><li><a href="#">Privacy</a></li>
+      <li><a href="#">Cookie Preferences</a></li><li><a href="#">Corporate Information</a></li>
+    </ul>
+    <select aria-label="Language"><option>English</option><option>हिन्दी</option></select>
+  </div>
+</footer>
+
+<div class="toast" id="toast" hidden></div>
+<script src="login.js"></script>
+</body>
+</html>
